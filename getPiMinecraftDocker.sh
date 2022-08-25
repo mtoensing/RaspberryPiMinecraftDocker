@@ -16,7 +16,7 @@ then
     echo "### This will only take a few minutes to complete."
     echo "### Making sure we are in the home directory."
     cd
-    echo "### Generate directoy ~/mcserver"
+    echo "### Create directoy ~/mcserver"
     mkdir mcserver
     echo "### Download docker installation script from get.docker.com"
     curl -fsSL https://get.docker.com -o get-docker.sh
