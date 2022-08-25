@@ -52,6 +52,6 @@ echo "### Show running docker containers."
 docker ps 
 echo "### Finished installation!"
 echo "### Use the following command to enter the command line of the server:"
-echo "docker attach mcserver"
+echo "newgrp docker && docker attach mcserver"
 echo "Press Ctrl-P, followed by Ctrl-Q to exit."
 echo "### Please open Minecraft and connect to this hostname:" $(hostname -I | cut -d' ' -f1)
