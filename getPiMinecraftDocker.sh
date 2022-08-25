@@ -50,8 +50,14 @@ echo "### Starting Watchdog to keep the container up to date"
 docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
 echo "### Show running docker containers."
 docker ps 
+echo "### 3"
+echo "### 2"
+echo "### 1"
 echo "### Finished installation!"
 echo "### Use the following command to enter the command line of the server:"
 echo "newgrp docker && docker attach mcserver"
 echo "Press Ctrl-P, followed by Ctrl-Q to exit."
-echo "### Please open Minecraft and connect to this hostname:" $(hostname -I | cut -d' ' -f1)
+echo "### Use this command now to watch the server starting:"
+echo "docker logs mcserver --follow" 
+echo "Press Ctrl-X to exit the docker log."
+echo "### After you see 'Timings reset' in the log, please open Minecraft and connect to this hostname:" $(hostname -I | cut -d' ' -f1)
