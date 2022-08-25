@@ -12,15 +12,15 @@ then
         echo "Please install Raspberry Pi OS LITE (64-Bit) first."
         exit 1
     fi
-    echo "### Let's install Docker and Minecraft Server on a Pi ###"
-    echo "### This will take only a few minutes to complete. ###"
+    echo "### Let's install Docker and Minecraft Server on a Pi."
+    echo "### This will only take a few minutes to complete."
     echo "### Making sure we are in the home directory."
     cd
     echo "### Generate directoy ~/mcserver"
     mkdir mcserver
     echo "### Download docker installation script from get.docker.com"
     curl -fsSL https://get.docker.com -o get-docker.sh
-    echo "###  Make the docker script executable."
+    echo "### Make the docker script executable."
     chmod +x get-docker.sh 
     echo "### Run Docker installation script."
     ./get-docker.sh 

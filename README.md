@@ -8,8 +8,8 @@ Install Raspberry Pi OS 64-Bit and enable SSH.
 Execute this: 
 
 ```sh
-curl -fsSL https://getmc.marc.tv/ -o get-pi-docker-minecraft.sh 
-chmod +x get-pi-docker-minecraft.sh 
-./get-pi-docker-minecraft.sh
+curl -fsSL https://getmc.marc.tv/ -o install-pi-docker-minecraft.sh 
+chmod +x install-pi-docker-minecraft.sh 
+./install-pi-docker-minecraft.sh
 ```
 
