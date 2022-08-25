@@ -7,26 +7,27 @@
 group=docker
 if [ $(id -gn) != $group ]
 then
-    echo "Let's install Docker and Minecraft Server"
-    echo "Make sure we are in the home directory."
+    echo "### Let's install Docker and Minecraft Server on a Pi ###"
+    echo "### This will take only a few minutes to complete. ###"
+    echo "### Making sure we are in the home directory."
     cd
-    echo "Generate directoy ~/mcserver"
+    echo "### Generate directoy ~/mcserver"
     mkdir mcserver
-    echo "Download docker installation script from get.docker.com"
+    echo "### Download docker installation script from get.docker.com"
     curl -fsSL https://get.docker.com -o get-docker.sh
-    echo "Make the docker script executable."
+    echo "###  Make the docker script executable."
     chmod +x get-docker.sh 
-    echo "Run Docker installation script."
+    echo "### Run Docker installation script."
     ./get-docker.sh 
-    echo "Install uidmap."
+    echo "### Install uidmap."
     sudo apt-get install -y uidmap
-    echo "Setup dockerd-rootless."
+    echo "### Setup dockerd-rootless."
     dockerd-rootless-setuptool.sh install
-    echo "Add user to docker group."
+    echo "### Add user to docker group."
     sudo usermod -aG docker $USER
     sudo systemctl enable docker
 fi
-echo "Log in to new group docker."
+echo "### Log in to new group docker."
 # From https://stackoverflow.com/questions/299728/how-do-you-use-newgrp-in-a-script-then-stay-in-that-group-when-the-script-exits/8363574#8363574
 group=docker
 if [ $(id -gn) != $group ]
