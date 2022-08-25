@@ -50,6 +50,8 @@ echo "### Starting Watchdog to keep the container up to date"
 docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
 echo "### Show running docker containers."
 docker ps 
-echo "### Finished! ###"
-echo "### Please open Minecraft and connect to this hostname:"
-hostname -I | cut -d' ' -f1
+echo "### Finished installation!"
+echo "### Use the following command to enter the command line of the server:"
+echo "docker attach mcserver"
+echo "Press Ctrl-P, followed by Ctrl-Q to exit."
+echo "### Please open Minecraft and connect to this hostname:" $(hostname -I | cut -d' ' -f1)
