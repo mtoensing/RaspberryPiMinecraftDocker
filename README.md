@@ -1,7 +1,7 @@
 # Raspberry Pi Minecraft Docker
-Installs a Minecraft Docker Server using Docker within seconds. 
+Install a Minecraft Docker Server using Docker within seconds. 
 
-# Quickstart 
+# Quick start 
 
 Step 1: Install Raspberry Pi OS 64-Bit and enable SSH.
 
