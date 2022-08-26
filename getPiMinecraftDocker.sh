@@ -35,6 +35,7 @@ then
     echo "### Log in to new group docker."
 fi
 # From https://stackoverflow.com/questions/299728/how-do-you-use-newgrp-in-a-script-then-stay-in-that-group-when-the-script-exits/8363574#8363574
+# If you have a better solution, please provide a PR.
 group=docker
 if [ $(id -gn) != $group ]
 then
