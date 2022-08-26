@@ -4,6 +4,21 @@
 # V1.0
 # https://getmc.marc.tv
 # GitHub Repository: https://github.com/mtoensing/RaspberryPiMinecraftDocker
+#
+#
+#
+# Quick start 
+# Step 1: Install Raspberry Pi OS 64-Bit and enable SSH.
+#
+# Step 2: Copy and then execute these commands on the shell of the Pi.
+#
+# curl -fsSL https://getmc.marc.tv/ -o install-pi-docker-minecraft.sh 
+# chmod +x install-pi-docker-minecraft.sh 
+# ./install-pi-docker-minecraft.sh
+#
+# Step 3: Play Minecraft on an automatically updated server.
+#
+#
 group=docker
 if [ $(id -gn) != $group ]
 then
