@@ -64,7 +64,7 @@ sleep 5
 echo "### Starting Minecraftserver using Docker."
 docker run -d --restart unless-stopped --name mcserver -e MEMORYSIZE='1G' -e PAPERMC_FLAGS='' -v /home/pi/mcserver:/data:rw -p 25565:25565 -it marctv/minecraft-papermc-server:latest
 echo "### Starting Watchdog to keep the container up to date"
-docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
+docker run -d --restart unless-stopped --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
 echo "### Show running docker containers."
 docker ps 
 echo "### 3"
@@ -83,4 +83,5 @@ echo $(hostname -I | cut -d' ' -f1)
 sleep 7
 echo ""
 echo "Find more information please visit https://github.com/mtoensing/RaspberryPiMinecraftDocker"
+newgrp docker
 
