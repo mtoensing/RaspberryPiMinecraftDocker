@@ -20,7 +20,6 @@ Select Mutliplayer, Add Server, Server Address and put in the hostname that is d
 ## Step 4 (optional): Check the log of the server:
 
 ```sh 
-newgrp docker
 docker logs mcserver
 ```
 
@@ -29,7 +28,6 @@ Press Ctrl-X to exit the docker log.
 ## Step 5 (optional): Go the command line of the server 
 
 ```sh 
-newgrp docker
 docker attach mcserver
 ```
 
