@@ -13,7 +13,9 @@ chmod +x install-pi-docker-minecraft.sh
 ./install-pi-docker-minecraft.sh
 ```
 
-## Step 3: Start Minecraft and connect to the hostname display at the end of the installation.
+## Step 3: Start Minecraft and connect
+
+Select Mutliplayer, Add Server, Server Address and put in the hostname that is displayed at the end of the installation.
 
 ## Step 4 (optional): Check the log of the server:
 
