@@ -1,5 +1,5 @@
-# Raspberry Pi Minecraft Docker
-Install a Minecraft Docker Server using Docker within seconds. 
+# Raspberry Pi Minecraft Java Docker
+Install a Minecraft Java Server and Watchtower for automatic updates using Docker within seconds. Both will start automatically after a reboot.
 
 # Quick start 
 
