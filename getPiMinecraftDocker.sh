@@ -82,6 +82,5 @@ echo ""
 echo $(hostname -I | cut -d' ' -f1)
 sleep 7
 echo ""
-echo ""
 echo "Find more information please visit https://github.com/mtoensing/RaspberryPiMinecraftDocker"
 
