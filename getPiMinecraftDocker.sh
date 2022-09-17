@@ -75,12 +75,13 @@ echo "### 1"
 sleep 3
 echo "### Finished installation!"
 sleep 2
-echo "###"
-echo "###"
-echo "###"
+echo ""
 echo -e '\e[1m### Wait for at least 5 minutes for the server to start!\e[22m'
-echo "### Open Minecraft. Select Multiplayer, Add Server, Server Address and put in this hostname:"
+echo "Then open Minecraft. Select Multiplayer, Add Server, Server Address and put in this hostname:"
+echo ""
 echo $(hostname -I | cut -d' ' -f1)
-sleep 4
-echo "### Find more information here: https://github.com/mtoensing/RaspberryPiMinecraftDocker"
+sleep 7
+echo ""
+echo ""
+echo "Find more information please visit https://github.com/mtoensing/RaspberryPiMinecraftDocker"
 
