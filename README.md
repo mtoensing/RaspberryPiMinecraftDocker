@@ -23,7 +23,7 @@ Select Mutliplayer, Add Server, Server Address and put in the hostname that is d
 docker logs mcserver
 ```
 
-Press Ctrl-C to exit the docker log.
+*Press Ctrl-C to exit the docker log.*
 
 ## Step 5 (optional): Go the command line of the server 
 
@@ -38,4 +38,4 @@ op [username]
 whitelist add [username] 
 ```
 
-Press Ctrl-P, followed by Ctrl-Q to exit.
+*Press Ctrl-P, followed by Ctrl-Q to exit.*
