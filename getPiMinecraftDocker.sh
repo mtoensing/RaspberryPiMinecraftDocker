@@ -78,7 +78,7 @@ sleep 2
 echo "###"
 echo "###"
 echo "###"
-echo -e '\e[1m### Now open Minecraft. Select Mutliplayer, Add Server, Server Address and put in this hostname:\e[22m'
+echo -e '\e[1m### Open Minecraft. Select Multiplayer, Add Server, Server Address and put in this hostname:\e[22m'
 echo $(hostname -I | cut -d' ' -f1)
 echo "###"
 echo "### It may take some time to start the server for the first time. Check status with"
