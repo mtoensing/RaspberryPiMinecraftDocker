@@ -78,7 +78,7 @@ sleep 2
 echo "###"
 echo "###"
 echo "###"
-echo "### Now open Minecraft. Select Mutliplayer, Add Server, Server Address and put in this hostname:" $(hostname -I | cut -d' ' -f1)
+echo -e '\e[1m### Now open Minecraft. Select Mutliplayer, Add Server, Server Address and put in this hostname:\e[22m' $(hostname -I | cut -d' ' -f1)
 echo "###"
 echo "### It may take some time to start the server for the first time. You can check with the following two commands what the status is:"
 echo "newgrp docker"
