@@ -78,11 +78,9 @@ sleep 2
 echo "###"
 echo "###"
 echo "###"
+echo -e '\e[1m### Wait for at least 5 minutes for the server to start! :\e[22m'
 echo -e '\e[1m### Open Minecraft. Select Multiplayer, Add Server, Server Address and put in this hostname:\e[22m'
 echo $(hostname -I | cut -d' ' -f1)
-echo "###"
-echo "### It may take some time to start the server for the first time. Check status with"
-echo -e '\e[1mnewgrp docker\e[22m' 
-echo -e '\e[1mdocker logs mcserver\e[22m' 
-echo "Press Ctrl-X to exit the docker log." 
+sleep 4
 echo "### Find more information here: https://github.com/mtoensing/RaspberryPiMinecraftDocker"
+
