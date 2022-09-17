@@ -15,7 +15,7 @@ chmod +x install-pi-docker-minecraft.sh
 
 ## Step 3: Start Minecraft and connect to the hostname display at the end of the installation.
 
-## Step 4 (optional): Lock at the log of the server:
+## Step 4 (optional): Check the log of the server:
 
 ```sh 
 newgrp docker
