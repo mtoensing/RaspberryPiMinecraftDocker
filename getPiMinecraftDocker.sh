@@ -68,9 +68,13 @@ docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock con
 echo "### Show running docker containers."
 docker ps 
 echo "### 3"
+sleep 2
 echo "### 2"
+sleep 2
 echo "### 1"
+sleep 3
 echo "### Finished installation!"
+sleep 2
 echo "###"
 echo "###"
 echo "###"
