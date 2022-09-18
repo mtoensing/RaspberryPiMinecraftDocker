@@ -76,7 +76,7 @@ sleep 3
 echo "### Finished installation!"
 sleep 2
 echo ""
-echo -e '\e[1m### Wait for at least 5 minutes for the server to start!\e[22m'
+echo -e '\e[1m### Wait at least 5 minutes for the server to start!\e[22m'
 echo "Then open Minecraft. Select Multiplayer, Add Server, Server Address and put in this hostname:"
 echo ""
 echo $(hostname -I | cut -d' ' -f1)
