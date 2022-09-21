@@ -39,3 +39,7 @@ whitelist add [username]
 ```
 
 *Press Ctrl-P, followed by Ctrl-Q to exit.*
+
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/BuHOyhM2fCg/maxresdefault.jpg)](https://youtu.be/BuHOyhM2fCg)
