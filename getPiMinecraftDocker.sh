@@ -82,7 +82,8 @@ echo ""
 echo $(hostname -I | cut -d' ' -f1)
 sleep 7
 echo ""
-echo -e '\e[1m### The server will be started automatically after a reboot. Watchtower will try to update the Docker container at least once daily.\e[22m'
+echo -e '\e[1m### The server will be started automatically after a reboot.\e[22m'
+echo -e '\e[1m### Watchtower will try to update the Docker container at least once daily.\e[22m'
 echo "Find more information please visit https://github.com/mtoensing/RaspberryPiMinecraftDocker"
 newgrp docker
 
