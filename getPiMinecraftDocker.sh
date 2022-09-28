@@ -67,13 +67,13 @@ echo "### Starting Watchdog to keep the container up to date"
 docker run -d --restart unless-stopped --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
 echo "### Show running docker containers."
 docker ps 
-echo "### 3"
+echo "3"
 sleep 2
-echo "### 2"
+echo "2"
 sleep 2
-echo "### 1"
+echo "1"
 sleep 3
-echo "### Finished installation!"
+echo "### The installation is complete."
 sleep 2
 echo ""
 echo -e '\e[1m### Wait at least 5 minutes for the server to start!\e[22m'
