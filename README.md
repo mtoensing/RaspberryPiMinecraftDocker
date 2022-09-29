@@ -43,6 +43,20 @@ whitelist add [username]
 
 *Press Ctrl-P, followed by Ctrl-Q to exit.*
 
+## Useful commands
+
+Before you report a problem, check with the following command if the containers are running. 
+
+```sh 
+docker ps
+```
+ 
+To start the container manually: 
+
+```sh 
+docker start mcserver
+```
+
 # Video Tutorial
 
 [![Watch the video](https://img.youtube.com/vi/BuHOyhM2fCg/maxresdefault.jpg)](https://youtu.be/BuHOyhM2fCg)
