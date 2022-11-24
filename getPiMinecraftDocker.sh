@@ -65,15 +65,15 @@ echo "### Starting Minecraftserver using Docker."
 docker run -d --restart unless-stopped --name mcserver -e MEMORYSIZE='1G' -e PAPERMC_FLAGS='' -v /home/pi/mcserver:/data:rw -p 25565:25565 -it marctv/minecraft-papermc-server:latest
 echo "### Starting Watchdog to keep the container up to date"
 docker run -d --restart unless-stopped --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower
-echo "### Show running docker containers."
-docker ps 
-echo "### 3"
+echo "3"
 sleep 2
-echo "### 2"
+echo "2"
 sleep 2
-echo "### 1"
+echo "1"
 sleep 3
-echo "### Finished installation!"
+echo "### The installation is complete."
+echo "### Running docker containers:"
+docker ps --format "{{.Names}}: {{.Image}}" --no-trunc
 sleep 2
 echo ""
 echo -e '\e[1m### Wait at least 5 minutes for the server to start!\e[22m'
@@ -82,6 +82,8 @@ echo ""
 echo $(hostname -I | cut -d' ' -f1)
 sleep 7
 echo ""
+echo -e '\e[1m### The server will be started automatically after a reboot.\e[22m'
+echo -e '\e[1m### Watchtower will try to update the Docker container at least once daily.\e[22m'
 echo "Find more information please visit https://github.com/mtoensing/RaspberryPiMinecraftDocker"
 newgrp docker
 
