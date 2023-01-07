@@ -80,6 +80,8 @@ echo -e '\e[1m### Wait at least 5 minutes for the server to start!\e[22m'
 echo "Then open Minecraft. Select Multiplayer, Add Server, Server Address and put in this hostname:"
 echo ""
 echo $(hostname -I | cut -d' ' -f1)
+echo -e '\e[1m### If this does not work use the following command to reboot the pi. Sometimes this seems necessary.\e[22m'
+echo "docker rm mcserver && docker rm watchtower && sudo reboot"
 sleep 7
 echo ""
 echo -e '\e[1m### The server will be started automatically after a reboot.\e[22m'
