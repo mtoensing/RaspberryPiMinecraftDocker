@@ -60,7 +60,7 @@ then
     exec sg $group "$0 ${arr[@]}"
 fi
 echo "### Wait 5 seconds to make sure docker is up."
-sleep 5
+sleep 10
 echo "### Starting Minecraftserver using Docker."
 docker run -d --restart unless-stopped --name mcserver -e MEMORYSIZE='1G' -e PAPERMC_FLAGS='' -v /home/pi/mcserver:/data:rw -p 25565:25565 -it marctv/minecraft-papermc-server:latest
 echo "### Starting Watchdog to keep the container up to date"
