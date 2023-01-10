@@ -46,7 +46,6 @@ then
     echo "### Add user to docker group."
     sudo usermod -aG docker $USER
     sudo systemctl enable docker
-    sudo loginctl enable-linger pi
     echo "### Log in to new group docker."
 fi
 # From https://stackoverflow.com/questions/299728/how-do-you-use-newgrp-in-a-script-then-stay-in-that-group-when-the-script-exits/8363574#8363574
@@ -60,7 +59,7 @@ then
     exec sg $group "$0 ${arr[@]}"
 fi
 echo "### Wait 5 seconds to make sure docker is up."
-sleep 5
+sleep 10
 echo "### Starting Minecraftserver using Docker."
 sudo docker run -d --restart unless-stopped --name mcserver -e MEMORYSIZE='1G' -e PAPERMC_FLAGS='' -v /home/pi/mcserver:/data:rw -p 25565:25565 -it marctv/minecraft-papermc-server:latest
 echo "### Starting Watchdog to keep the container up to date"
@@ -80,6 +79,8 @@ echo -e '\e[1m### Wait at least 5 minutes for the server to start!\e[22m'
 echo "Then open Minecraft. Select Multiplayer, Add Server, Server Address and put in this hostname:"
 echo ""
 echo $(hostname -I | cut -d' ' -f1)
+echo -e '\e[1m### If this does not work use the following command to reboot the pi. Sometimes this seems necessary.\e[22m'
+echo "docker rm mcserver && docker rm watchtower && sudo reboot"
 sleep 7
 echo ""
 echo -e '\e[1m### The server will be started automatically after a reboot.\e[22m'
