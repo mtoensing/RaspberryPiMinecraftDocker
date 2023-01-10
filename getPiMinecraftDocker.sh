@@ -72,7 +72,7 @@ echo "1"
 sleep 3
 echo "### The installation is complete."
 echo "### Running docker containers:"
-docker ps --format "{{.Names}}: {{.Image}}" --no-trunc
+sudo docker ps --format "{{.Names}}: {{.Image}}" --no-trunc
 sleep 2
 echo ""
 echo -e '\e[1m### Wait at least 5 minutes for the server to start!\e[22m'
