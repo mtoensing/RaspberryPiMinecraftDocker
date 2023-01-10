@@ -46,7 +46,6 @@ then
     echo "### Add user to docker group."
     sudo usermod -aG docker $USER
     sudo systemctl enable docker
-    sudo loginctl enable-linger pi
     echo "### Log in to new group docker."
 fi
 # From https://stackoverflow.com/questions/299728/how-do-you-use-newgrp-in-a-script-then-stay-in-that-group-when-the-script-exits/8363574#8363574
