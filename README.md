@@ -1,4 +1,4 @@
-# Minecraft Server 1.19+ on a Raspberry Pi using Docker
+# Minecraft Server 1.20+ on a Raspberry Pi using Docker
 
 Install a Minecraft Java Server and Watchtower for automatic updates using Docker within seconds. Both will start automatically after a reboot. 
 
