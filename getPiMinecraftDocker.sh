@@ -71,6 +71,7 @@ sleep 2
 echo "1"
 sleep 3
 echo "### The installation is complete."
+echo -e '\e[1m### The server will be started automatically after a reboot.\e[22m'
 echo "### Running docker containers:"
 sudo docker ps --format "{{.Names}}: {{.Image}}" --no-trunc
 sleep 2
@@ -79,12 +80,12 @@ echo -e '\e[1m### Wait at least 5 minutes for the server to start!\e[22m'
 echo "Then open Minecraft. Select Multiplayer, Add Server, Server Address and put in this hostname:"
 echo ""
 echo $(hostname -I | cut -d' ' -f1)
-echo -e '\e[1m### If this does not work use the following command to reboot the pi. Sometimes this seems necessary.\e[22m'
-echo "docker rm mcserver && docker rm watchtower && sudo reboot"
-sleep 7
 echo ""
-echo -e '\e[1m### The server will be started automatically after a reboot.\e[22m'
+echo -e '\e[1m### If this does not work use the following command to reboot the pi. Sometimes this seems necessary.\e[22m'
 echo -e '\e[1m### Watchtower will try to update the Docker container at least once daily.\e[22m'
+echo "docker rm mcserver && docker rm watchtower && sudo reboot"
+sleep 3
+echo ""
 echo "Find more information please visit https://github.com/mtoensing/RaspberryPiMinecraftDocker"
 newgrp docker
 
