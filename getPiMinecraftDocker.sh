@@ -86,6 +86,7 @@ echo "docker rm mcserver && docker rm watchtower && sudo reboot"
 echo -e '\e[1m### Watchtower will try to update the Docker container at least once daily.\e[22m'
 sleep 3
 echo ""
-echo "Find more information please visit https://github.com/mtoensing/RaspberryPiMinecraftDocker"
+echo "Find more information please visit:"
+echo "https://github.com/mtoensing/RaspberryPiMinecraftDocker"
 newgrp docker
 
