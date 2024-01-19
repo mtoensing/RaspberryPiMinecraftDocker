@@ -20,6 +20,14 @@ chmod +x install-pi-docker-minecraft.sh
 
 Select Mutliplayer, Add Server, Server Address and put in the hostname that is displayed at the end of the installation.
 
+If this does not work, please check with the following command, if the containers are running: 
+
+```sh 
+sudo docker ps
+```
+
+This should list two containers: mcserver and watchtower. If this is not the case, please lock at the output of the script for errors.
+
 ## Step 4 (optional): Check the log of the server:
 
 ```sh 
