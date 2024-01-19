@@ -81,12 +81,7 @@ echo "Then open Minecraft. Select Multiplayer, Add Server, Server Address and pu
 echo ""
 echo $(hostname -I | cut -d' ' -f1)
 echo ""
-echo -e '\e[1m### If this does not work use the following command to reboot the pi. Sometimes this seems necessary.\e[22m'
-echo "docker rm mcserver && docker rm watchtower && sudo reboot"
-echo -e '\e[1m### Watchtower will try to update the Docker container at least once daily.\e[22m'
-sleep 3
-echo ""
-echo "Find more information please visit:"
+echo -e '\e[1m### For more information please visit:\e[22m'
 echo "https://github.com/mtoensing/RaspberryPiMinecraftDocker"
 newgrp docker
 
