@@ -23,7 +23,7 @@ Select Mutliplayer, Add Server, Server Address and put in the hostname that is d
 ## Step 4 (optional): Check the log of the server:
 
 ```sh 
-docker logs mcserver
+sudo docker logs mcserver
 ```
 
 *Press Ctrl-C to exit the docker log.*
@@ -31,10 +31,10 @@ docker logs mcserver
 ## Step 5 (optional): Go the command line of the server 
 
 ```sh 
-docker attach mcserver
+sudo docker attach mcserver
 ```
 
-Here you can use commands like 
+Here you can use Minecraft commands like 
 
 ```sh 
 op [username] 
@@ -48,13 +48,13 @@ whitelist add [username]
 Before you report a problem, check with the following command if the containers are running. 
 
 ```sh 
-docker ps
+sudo docker ps
 ```
  
 To start the container manually: 
 
 ```sh 
-docker start mcserver
+sudo docker start mcserver
 ```
 
 # Video Tutorial
