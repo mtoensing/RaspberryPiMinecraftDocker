@@ -81,6 +81,10 @@ echo "Then open Minecraft. Select Multiplayer, Add Server, Server Address and pu
 echo ""
 echo $(hostname -I | cut -d' ' -f1)
 echo ""
+echo "Use the following command to enter the command line of the server:"
+echo "sudo docker attach mcserver"
+echo "Press Ctrl-P, followed by Ctrl-Q to exit the command line."
+echo ""
 echo -e '\e[1m### For more information please visit:\e[22m'
 echo "https://github.com/mtoensing/RaspberryPiMinecraftDocker"
 newgrp docker
